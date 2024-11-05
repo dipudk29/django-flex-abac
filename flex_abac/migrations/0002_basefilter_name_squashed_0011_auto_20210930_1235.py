@@ -60,10 +60,6 @@ class Migration(migrations.Migration):
             name='categoricalfilter',
             options={},
         ),
-        migrations.AlterUniqueTogether(
-            name='categoricalfilter',
-            unique_together={('value', 'attribute_type')},
-        ),
         migrations.AlterModelOptions(
             name='genericfilter',
             options={},
@@ -71,18 +67,6 @@ class Migration(migrations.Migration):
         migrations.AlterModelOptions(
             name='nestedcategoricalfilter',
             options={},
-        ),
-        migrations.AlterUniqueTogether(
-            name='genericfilter',
-            unique_together={('value', 'attribute_type')},
-        ),
-        migrations.AlterUniqueTogether(
-            name='materializednestedcategoricalfilter',
-            unique_together={('value', 'attribute_type')},
-        ),
-        migrations.AlterUniqueTogether(
-            name='nestedcategoricalfilter',
-            unique_together={('value', 'attribute_type')},
         ),
         migrations.AlterModelOptions(
             name='categoricalfilter',
@@ -96,8 +80,24 @@ class Migration(migrations.Migration):
             name='categoricalfilter',
             options={},
         ),
-        migrations.AlterUniqueTogether(
-            name='categoricalfilter',
-            unique_together={('attribute_type', 'value')},
-        ),
+        # migrations.AlterUniqueTogether(
+        #     name='categoricalfilter',
+        #     unique_together={('value', 'attribute_type')},
+        # ),
+        # migrations.AlterUniqueTogether(
+        #     name='genericfilter',
+        #     unique_together={('value', 'attribute_type')},
+        # ),
+        # migrations.AlterUniqueTogether(
+        #     name='materializednestedcategoricalfilter',
+        #     unique_together={('value', 'attribute_type')},
+        # ),
+        # migrations.AlterUniqueTogether(
+        #     name='nestedcategoricalfilter',
+        #     unique_together={('value', 'attribute_type')},
+        # ),
+        # migrations.AlterUniqueTogether(
+        #     name='categoricalfilter',
+        #     unique_together={('attribute_type', 'value')},
+        # ),
     ]
