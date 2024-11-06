@@ -16,8 +16,8 @@ class CategoricalFilter(BaseFilter):
         related_name='values'
     )
 
-    class Meta:
-        unique_together = ("attribute_type", "value")
+    # class Meta:
+    #     unique_together = ("attribute_type", "value")
 
     policies = models.ManyToManyField(
         'flex_abac.Policy',

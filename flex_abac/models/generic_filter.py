@@ -20,8 +20,8 @@ class GenericFilter(BaseFilter):
         through='flex_abac.PolicyGenericFilter'
     )
 
-    class Meta:
-        unique_together = ("value", "attribute_type")
+    # class Meta:
+    #     unique_together = ("value", "attribute_type")
 
     @classmethod
     def print_all(cls):

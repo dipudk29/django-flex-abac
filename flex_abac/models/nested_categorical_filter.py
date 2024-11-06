@@ -23,8 +23,8 @@ class NestedCategoricalFilter(BaseFilter):
         through='flex_abac.PolicyNestedCategoricalFilter'
     )
 
-    class Meta:
-        unique_together = ("value", "attribute_type")
+    # class Meta:
+    #     unique_together = ("value", "attribute_type")
 
     @classmethod
     def print_all(cls):
